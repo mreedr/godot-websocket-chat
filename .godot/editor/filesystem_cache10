@@ -1,0 +1,14 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763834125
+chat.tscn::PackedScene::313350643574209755::1763833734::0::1::::<><><>0<>0<><>::
+client.gd::GDScript::214996339784823820::1763833734::0::1::::<>Control<><>0<>0<><>::
+client.tscn::PackedScene::3565306865231449864::1763833734::0::1::::<><><>0<>0<><>::uid://ep13situ5bnn::::res://chat.tscn<>uid://cq21llpooglf1::::res://websocket/WebSocketClient.gd<>uid://dce7t2hll3hg::::res://client.gd
+combo.tscn::PackedScene::8197038930259494225::1763833734::0::1::::<><><>0<>0<><>::uid://bqayqu4cd46ms::::res://server.tscn<>uid://bq2cc3faoivn1::::res://client.tscn
+export_presets.cfg::TextFile::-1::1763833734::0::1::::<><><>0<>0<><>::
+icon.webp::CompressedTexture2D::6737264026743939867::1763833734::1763833734::1::::<><><>0<>0<>15f8c576432bfa53f57b6c08fde4f28e<>res://.godot/imported/icon.webp-e94f9a68b0f625a567a797079e4d325f.ctex::
+README.md::TextFile::-1::1763833734::0::1::::<><><>0<>0<><>::
+server.gd::GDScript::2856081831886838108::1763833734::0::1::::<>Control<><>0<>0<><>::
+server.tscn::PackedScene::3510929057792879550::1763833734::0::1::::<><><>0<>0<><>::uid://ep13situ5bnn::::res://chat.tscn<>uid://bgxrirtmalem3::::res://server.gd<>uid://sgtvdyjovl50::::res://websocket/WebSocketServer.gd
+::res://websocket/::1763833734
+WebSocketClient.gd::GDScript::5953199952083187328::1763833734::0::1::::WebSocketClient<>Node<><>0<>0<><>::
+WebSocketServer.gd::GDScript::1276976771617330281::1763833734::0::1::::WebSocketServer<>Node<><>0<>0<><>::
