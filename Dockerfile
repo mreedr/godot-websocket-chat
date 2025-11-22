@@ -7,14 +7,12 @@ RUN apt-get update && \
     ca-certificates \
     wget \
     unzip \
+    fontconfig \
     && rm -rf /var/lib/apt/lists/*
 
 # Download Godot 4.5.1 stable (linux x86_64) from the exact URL you provided
 # Added --tries=5 and --retry-connrefused in case Railway's network is flaky
 RUN wget -O godot.zip \
-    --tries=5 \
-    --retry-connrefused \
-    --waitretry=5 \
     "https://downloads.godotengine.org/?version=4.5.1&flavor=stable&slug=linux.x86_64.zip&platform=linux.64" \
     && unzip godot.zip \
     && mv Godot_v4.5.1-stable_linux.x86_64 /usr/local/bin/godot \

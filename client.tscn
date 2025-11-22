@@ -19,6 +19,10 @@ anchors_preset = 15
 layout_mode = 1
 anchors_preset = 15
 
+[node name="Host" parent="Panel/VBoxContainer/Connect" index="0"]
+text = "wss://godot-websocket-chat-production.up.railway.app"
+placeholder_text = "wss://godot-websocket-chat-production.up.railway.app"
+
 [node name="Port" parent="Panel/VBoxContainer/Connect" index="2"]
 visible = false
 
