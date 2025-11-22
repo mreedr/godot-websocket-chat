@@ -30,4 +30,4 @@ ENV PORT=8000
 EXPOSE ${PORT}
 
 # Run the server headless
-CMD ["/usr/local/bin/godot", "--headless", "server/server.tscn"]
+CMD ["/usr/local/bin/godot", "--headless", "--path", "/app", "server/server.tscn"]
