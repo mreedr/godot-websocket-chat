@@ -1,5 +1,2 @@
-res://combo.tscn
-res://server.gd
 res://server.tscn
-res://export_presets.cfg
-res://client.tscn
+res://server.gd

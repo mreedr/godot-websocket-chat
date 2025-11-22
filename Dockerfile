@@ -31,3 +31,5 @@ EXPOSE ${PORT}
 
 # Run the server headless
 CMD ["/usr/local/bin/godot", "--headless", "server.tscn"]
+
+RUN ls .

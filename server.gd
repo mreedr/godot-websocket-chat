@@ -37,6 +37,13 @@ func _on_send_pressed() -> void:
 	_server.send(0, "Server says: %s" % _line_edit.text)
 	_line_edit.text = ""
 
+func _ready() -> void:
+	var port = int(OS.get_environment("PORT"))
+	if !port:
+		print("no port im a client")
+	else:
+		print("port found", port, "im a server")
+		_on_listen_toggled(true)
 
 func _on_listen_toggled(pressed: bool) -> void:
 	if not pressed:
@@ -44,7 +51,8 @@ func _on_listen_toggled(pressed: bool) -> void:
 		info("Server stopped")
 		return
 
-	var port := int(_listen_port.value)
+	var port = int(OS.get_environment("PORT"))
+	#var port := int(_listen_port.value)
 	var err := _server.listen(port)
 
 	if err != OK:
