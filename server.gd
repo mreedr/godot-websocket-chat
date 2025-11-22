@@ -38,7 +38,7 @@ func _on_send_pressed() -> void:
 	_line_edit.text = ""
 
 func _ready() -> void:
-	var port = int(OS.get_environment("PORT"))
+	var port := int(OS.get_environment("PORT"))
 	if !port:
 		print("no port im a client")
 	else:
@@ -51,7 +51,7 @@ func _on_listen_toggled(pressed: bool) -> void:
 		info("Server stopped")
 		return
 
-	var port = int(OS.get_environment("PORT"))
+	var port := int(OS.get_environment("PORT"))
 	#var port := int(_listen_port.value)
 	var err := _server.listen(port)
 
