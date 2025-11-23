@@ -1,5 +1,2 @@
-res://server.tscn
-res://server.gd
-res://websocket/WebSocketClient.gd
-res://export_presets.cfg
 res://client.tscn
+res://server.gd

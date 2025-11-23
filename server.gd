@@ -46,12 +46,14 @@ func _ready() -> void:
 		_on_listen_toggled(true)
 
 func _on_listen_toggled(pressed: bool) -> void:
+	var port := int(OS.get_environment("PORT"))
+	print("port from OS", port)
+
 	if not pressed:
 		_server.stop()
 		info("Server stopped")
 		return
 
-	var port := int(OS.get_environment("PORT"))
 	#var port := int(_listen_port.value)
 	var err := _server.listen(port)
 
