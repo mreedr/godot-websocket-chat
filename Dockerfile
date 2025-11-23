@@ -24,7 +24,7 @@ WORKDIR /app
 COPY . .
 
 # Railway injects $PORT automatically – fall back to 8000 if not set
-ENV PORT=8080
+ENV PORT=8000
 
 # Expose the port (helps with docs, Railway ignores this anyway)
 EXPOSE ${PORT}
