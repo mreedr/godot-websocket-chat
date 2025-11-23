@@ -13,8 +13,7 @@ signal connection_closed()
 signal message_received(message: Variant)
 
 func connect_to_url(url: String) -> int:
-	#socket.supported_protocols = supported_protocols
-	socket.supported_protocols = ["demo-chat"]
+	socket.supported_protocols = supported_protocols
 	socket.handshake_headers = handshake_headers
 
 	var err := socket.connect_to_url(url, tls_options)

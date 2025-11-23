@@ -10,8 +10,6 @@ RUN apt-get update && \
     fontconfig \
     && rm -rf /var/lib/apt/lists/*
 
-# Download Godot 4.5.1 stable (linux x86_64) from the exact URL you provided
-# Added --tries=5 and --retry-connrefused in case Railway's network is flaky
 RUN wget -O godot.zip \
     "https://downloads.godotengine.org/?version=4.5.1&flavor=stable&slug=linux.x86_64.zip&platform=linux.64" \
     && unzip godot.zip \
@@ -23,12 +21,7 @@ RUN wget -O godot.zip \
 WORKDIR /app
 COPY . .
 
-# Railway injects $PORT automatically – fall back to 8000 if not set
-ENV PORT=8000
-
-# Expose the port (helps with docs, Railway ignores this anyway)
-EXPOSE ${PORT}
-# EXPOSE $PORT
+EXPOSE $PORT
 
 # Run the server headless
 CMD ["/usr/local/bin/godot", "--headless", "server.tscn"]
